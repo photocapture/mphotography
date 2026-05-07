@@ -2,185 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Terms of Service - MPhotography</title>
-  <style>
-    @font-face {
-      font-family: 'primary';
-      src: url('assets/fonts/primary.ttf') format('trueType');
-      font-weight: normal;
-      font-style: normal;
-    }
-    body {
-      font-family: 'primary', sans-serif;
-      background-color: #f0f2f5;
-      margin: 0;
-      padding: 0;
-      color: #333;
-    }
-
-    .container {
-      margin: auto;
-      padding: 50px 20px;
-    }
-
-    h1, h2 {
-    font-family: 'Segoe UI', sans-serif;
-    color: #2c3e50;
-    }
-
-    h1 {
-    font-family: 'primary', sans-serif;
-    font-size: 2.8em;
-    }
-
-    h2 {
-    font-family: 'primary', sans-serif;
-    font-size: 2em;
-    margin-top: 40px;
-    }
-
-    p {
-    font-size: 1.1em;
-    color: #555;
-    margin: 0 auto 40px auto;
-    line-height: 1.6;
-    font-family: 'primary', sans-serif;
-    }
-
-    form {
-      background: white;
-      padding: 30px;
-      border-radius: 15px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    }
-
-    h1, h2, p, ul {
-        margin-left: 20px;
-    }
-
-    label {
-      display: block;
-      margin-bottom: 8px;
-      font-weight: bold;
-      color: #2c3e50;
-    }
-
-    input, select, textarea {
-      width: 100%;
-      padding: 12px;
-      margin-bottom: 20px;
-      border: 1px solid #ccc;
-      border-radius: 10px;
-      font-size: 1em;
-    }
-
-    button {
-      background-color: #2c3e50;
-      color: white;
-      border: none;
-      padding: 12px 24px;
-      font-size: 1em;
-      cursor: pointer;
-      width: 100%;
-      transition: background-color 0.3s ease;
-    }
-    .center-button button {
-        margin: 0;
-    }
-    button:hover {
-      background-color: #34495e;
-    }
-
-    hr {
-        border: none;
-        height: 2px;
-        background-color: #34495e;
-        margin-left: 20px;
-        width: 50%;
-    }
-
-    .navbar {
-      background-color: #2c3e50;
-      color: white;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 12px 20px;
-      position: sticky;
-      top: 0;
-      z-index: 999;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-    }
-
-    .nav-logo {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .nav-logo img {
-      width: 40px;
-      height: 40px;
-      object-fit: contain;
-      background-color: transparent;
-    }
-
-    .nav-logo span {
-      font-size: 1.2em;
-      font-weight: bold;
-      font-family: 'primary', sans-serif;
-      color: white;
-    }
-
-    .nav-links {
-      list-style: none;
-      display: flex;
-      gap: 25px;
-      margin: 0;
-      padding: 0;
-    }
-
-    .nav-links li a {
-      text-decoration: none;
-      color: white;
-      font-weight: 500;
-      font-size: 1em;
-      transition: color 0.3s ease;
-    }
-
-    .nav-links li a:hover {
-      color: #f1c40f;
-    }
-
-    @media (max-width: 768px) {
-      .nav-links {
-        flex-direction: column;
-        background-color: #2c3e50;
-        position: absolute;
-        top: 60px;
-        right: 20px;
-        width: 150px;
-        display: none;
-      }
-
-      .navbar.expanded .nav-links {
-        display: flex;
-      }
-    }
-    @media (max-width: 600px) {
-      .container {
-        padding: 30px 10px;
-      }
-    }
-  </style>
-    
+  <link rel="stylesheet" href="assets/styles/main.css" />
 </head>
 <body>
+
   <nav class="navbar">
-    <div class="nav-logo">
+    <a class="nav-logo" href="index.html">
       <img src="assets/logo/br0.png" alt="Logo" />
       <span>MPhotography</span>
-    </div>
+    </a>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="contact.html">Contact</a></li>
@@ -188,67 +20,82 @@
       <li><a href="medrel.html">Media Release</a></li>
       <li><a href="gallery.html">Gallery</a></li>
     </ul>
+    <button class="menu-toggle" onclick="this.closest('.navbar').classList.toggle('expanded')">☰</button>
   </nav>
 
-    <h1>Our Terms of Service</h1>
-    <hr />
-    <h2><b>Last Revised Jul 2025</b></h2>
-    <h2>1. Definitions</h2>
-        <p>For purposes of this Agreement, the following terms shall have the meanings set forth below, unless the context otherwise requires:</p>
-        <ul>
-            <li><strong>“Client”</strong> means the individual or entity who has engaged the Services provided by MPhotography, or any representative thereof, who has consented to and executed this Agreement.</li>
-            <li><strong>“Services”</strong> refers collectively to all photography, videography, editing, production, and related activities performed or facilitated by MPhotography.</li>
-            <li><strong>“Media”</strong> includes all photographs, videos, digital images, audio recordings, and any other audiovisual materials captured, created, or produced by MPhotography pursuant to the Services.</li>
-            <li><strong>“Consent”</strong> denotes the voluntary, unequivocal, and informed agreement by the Client or subject(s) of Media to participate in the Services and to grant the rights described herein.</li>
-            <li><strong>“Media Release”</strong> is the executed document wherein the Client and any identifiable subject(s) of the Media grant MPhotography certain rights to use, distribute, and display the Media.</li>
-            <li><strong>“Usage Rights”</strong> encompass the worldwide, perpetual, irrevocable, royalty-free, and sublicensable license granted to MPhotography to utilize the Media as set forth in this Agreement.</li>
-            <li><strong>“Advertising”</strong> includes but is not limited to promotional materials, websites, social media platforms, print publications, advertisements, portfolios, exhibitions, broadcasts, and any other commercial or non-commercial distribution or display of the Media.</li>
-            <li><strong>“Retention Period”</strong> means the duration MPhotography shall maintain possession or control of the Media, including backup and archival storage.</li>
-            <li><strong>“Personal Data”</strong> refers to any information relating to an identified or identifiable natural person contained within or associated with the Media.</li>
-            <li><strong>“Confidential Information”</strong> shall mean any non-public information disclosed by either party in connection with the Services, including personal or proprietary details.</li>
-            <li><strong>“Intellectual Property Rights”</strong> refer to all copyrights, trademarks, moral rights, database rights, design rights, patents, and any other intellectual property rights worldwide in the Media.</li>
-            <li><strong>“Deposit”</strong> refers to a refundable monetary sum paid in advance by the Client, calculated based upon the geographical distance from the designated location (to be specified by MPhotography), which serves as a security to cover travel and operational costs associated with Services rendered beyond a threshold radius.</li>
-            <li><strong>“Designated Location”</strong> means the fixed geographic point or address from which distance calculations for Deposit purposes are derived, as specified by MPhotography.</li>
-            <li><strong>“Distance Threshold”</strong> signifies the initial 30 kilometers radius from the Designated Location within which no Deposit shall be applied or collected.</li>
-            <li><strong>“Distance-Based Fee”</strong> is the monetary charge applied for each incremental 2 kilometers (or fraction thereof) traveled beyond the Distance Threshold, calculated on a ceiling (round up) basis and added to the base Deposit amount.</li>
-        </ul>
+  <div class="container-narrow">
 
-    <h2>2. Consent and Media Release</h2>
-        <p>By engaging MPhotography’s Services and executing the accompanying Media Release, the Client may choose to grant MPhotography, its agents, representatives, licensees, successors, and assigns, the unrestricted, irrevocable right and license to capture, reproduce, edit, publish, display, distribute, sublicense, and otherwise use the Media for Advertising and promotional purposes worldwide in perpetuity, without limitation or further compensation.</p>
-        <p>The Client acknowledges and agrees that:</p>
-        <ul>
-            <li>Participation in the Services is voluntary, and consent has been freely given without coercion or duress.</li>
-            <li>The Media may feature identifiable images, likenesses, voices, and other personal attributes.</li>
-            <li>MPhotography shall own all Intellectual Property Rights in the Media, including derivative works, subject only to the limited license granted herein.</li>
-            <li>The Client waives any right to inspect or approve the Media or any advertising materials incorporating the Media prior to use.</li>
-            <li>The Media may be used in composite or altered forms at MPhotography’s sole discretion.</li>
-            <li>The Client releases MPhotography and its agents from any claims, demands, or liabilities arising out of or in connection with the use of the Media as described herein.</li>
-        </ul>
+    <div class="doc-header fade-in">
+      <h1>Terms of Service</h1>
+      <p class="doc-meta">Last Revised · July 2025</p>
+    </div>
 
-    <h2>3. Data Retention and Use</h2>
-        <p>MPhotography shall retain the Media and any associated Personal Data for a minimum period of five (5) years from the date of creation, or longer if required by applicable law or business necessity.</p>
-        <p>During this Retention Period, MPhotography may store the Media in physical or digital archives, backups, or cloud storage with appropriate security measures.</p>
-        <p>The Client understands that the Media may be used for ongoing Advertising and promotional activities throughout the Retention Period without additional consent.</p>
-        <p>Upon written request, MPhotography will consider removal or restricted use of the Media; however, such requests shall be subject to MPhotography’s sole discretion and applicable legal obligations.</p>
+    <div class="doc-section fade-up">
+      <h2>1. Definitions</h2>
+      <p>For purposes of this Agreement, the following terms shall have the meanings set forth below, unless the context otherwise requires:</p>
+      <ul>
+        <li><strong>"Client"</strong> means the individual or entity who has engaged the Services provided by MPhotography, or any representative thereof, who has consented to and executed this Agreement.</li>
+        <li><strong>"Services"</strong> refers collectively to all photography, videography, editing, production, and related activities performed or facilitated by MPhotography.</li>
+        <li><strong>"Media"</strong> includes all photographs, videos, digital images, audio recordings, and any other audiovisual materials captured, created, or produced by MPhotography pursuant to the Services.</li>
+        <li><strong>"Consent"</strong> denotes the voluntary, unequivocal, and informed agreement by the Client or subject(s) of Media to participate in the Services and to grant the rights described herein.</li>
+        <li><strong>"Media Release"</strong> is the executed document wherein the Client and any identifiable subject(s) of the Media grant MPhotography certain rights to use, distribute, and display the Media.</li>
+        <li><strong>"Usage Rights"</strong> encompass the worldwide, perpetual, irrevocable, royalty-free, and sublicensable license granted to MPhotography to utilize the Media as set forth in this Agreement.</li>
+        <li><strong>"Advertising"</strong> includes but is not limited to promotional materials, websites, social media platforms, print publications, advertisements, portfolios, exhibitions, broadcasts, and any other commercial or non-commercial distribution or display of the Media.</li>
+        <li><strong>"Retention Period"</strong> means the duration MPhotography shall maintain possession or control of the Media, including backup and archival storage.</li>
+        <li><strong>"Personal Data"</strong> refers to any information relating to an identified or identifiable natural person contained within or associated with the Media.</li>
+        <li><strong>"Confidential Information"</strong> shall mean any non-public information disclosed by either party in connection with the Services, including personal or proprietary details.</li>
+        <li><strong>"Intellectual Property Rights"</strong> refer to all copyrights, trademarks, moral rights, database rights, design rights, patents, and any other intellectual property rights worldwide in the Media.</li>
+        <li><strong>"Deposit"</strong> refers to a refundable monetary sum paid in advance by the Client, calculated based upon the geographical distance from the designated location (to be specified by MPhotography), which serves as a security to cover travel and operational costs associated with Services rendered beyond a threshold radius.</li>
+        <li><strong>"Designated Location"</strong> means the fixed geographic point or address from which distance calculations for Deposit purposes are derived, as specified by MPhotography.</li>
+        <li><strong>"Distance Threshold"</strong> signifies the initial 30 kilometers radius from the Designated Location within which no Deposit shall be applied or collected.</li>
+        <li><strong>"Distance-Based Fee"</strong> is the monetary charge applied for each incremental 2 kilometers (or fraction thereof) traveled beyond the Distance Threshold, calculated on a ceiling (round up) basis and added to the base Deposit amount.</li>
+      </ul>
+    </div>
 
-    <h2>4. Governing Law and Jurisdiction</h2>
-        <p>This Agreement shall be governed by and construed in accordance with the laws of the jurisdiction in which MPhotography operates, without regard to its conflict of law principles. Any disputes arising under or in connection with this Agreement shall be subject to the exclusive jurisdiction of the courts located therein.</p>
+    <div class="doc-section fade-up">
+      <h2>2. Consent and Media Release</h2>
+      <p>By engaging MPhotography's Services and executing the accompanying Media Release, the Client may choose to grant MPhotography, its agents, representatives, licensees, successors, and assigns, the unrestricted, irrevocable right and license to capture, reproduce, edit, publish, display, distribute, sublicense, and otherwise use the Media for Advertising and promotional purposes worldwide in perpetuity, without limitation or further compensation.</p>
+      <p>The Client acknowledges and agrees that:</p>
+      <ul>
+        <li>Participation in the Services is voluntary, and consent has been freely given without coercion or duress.</li>
+        <li>The Media may feature identifiable images, likenesses, voices, and other personal attributes.</li>
+        <li>MPhotography shall own all Intellectual Property Rights in the Media, including derivative works, subject only to the limited license granted herein.</li>
+        <li>The Client waives any right to inspect or approve the Media or any advertising materials incorporating the Media prior to use.</li>
+        <li>The Media may be used in composite or altered forms at MPhotography's sole discretion.</li>
+        <li>The Client releases MPhotography and its agents from any claims, demands, or liabilities arising out of or in connection with the use of the Media as described herein.</li>
+      </ul>
+    </div>
 
-    <h2>5. Entire Agreement</h2>
-        <p>This Agreement, including the Consent and Media Release documents, constitutes the entire understanding between the Client and MPhotography with respect to the subject matter hereof and supersedes all prior agreements, representations, or understandings, whether written or oral.</p>
+    <div class="doc-section fade-up">
+      <h2>3. Data Retention and Use</h2>
+      <p>MPhotography shall retain the Media and any associated Personal Data for a minimum period of five (5) years from the date of creation, or longer if required by applicable law or business necessity.</p>
+      <p>During this Retention Period, MPhotography may store the Media in physical or digital archives, backups, or cloud storage with appropriate security measures.</p>
+      <p>The Client understands that the Media may be used for ongoing Advertising and promotional activities throughout the Retention Period without additional consent.</p>
+      <p>Upon written request, MPhotography will consider removal or restricted use of the Media; however, such requests shall be subject to MPhotography's sole discretion and applicable legal obligations.</p>
+    </div>
 
-    <h2>6. Deposit and Refund Policy</h2>
-        <p>In consideration of the travel and operational expenditures incurred by MPhotography for Services rendered beyond the Distance Threshold from the Designated Location, a Deposit shall be levied according to the following parameters:</p>
-        <ul>
-            <li>The initial 30 kilometers radius from the location defined by [Leslie & Elgin Mills East (defined by the coordinates <b>(43.898552457697996, -79.39582126954045)</b>)] shall be exempt from any Deposit charges.</li>
-            <li>For all distances exceeding the Distance Threshold, a base Deposit fee of <strong>CAD $10</strong> shall be applied.</li>
-            <li>In addition to the base fee, a Distance-Based Fee of <strong>CAD $1</strong> per every incremental two (2) kilometers rounded up to nearest integer beyond the initial 30 kilometers shall be charged.</li>
-            <li>The Deposit shall be collected in advance of the Services and shall be <strong>fully refundable</strong> to the Client following the successful completion of the event or Services, subject to any deductions only for extraordinary expenses reasonably incurred.</li>
-        </ul>
-        <p>The Client acknowledges and agrees that the Deposit is a prerequisite to booking confirmation and that failure to remit the Deposit may result in cancellation or rescheduling of the Services.</p>
+    <div class="doc-section fade-up">
+      <h2>4. Governing Law and Jurisdiction</h2>
+      <p>This Agreement shall be governed by and construed in accordance with the laws of the jurisdiction in which MPhotography operates, without regard to its conflict of law principles. Any disputes arising under or in connection with this Agreement shall be subject to the exclusive jurisdiction of the courts located therein.</p>
+    </div>
 
-    </body>
+    <div class="doc-section fade-up">
+      <h2>5. Entire Agreement</h2>
+      <p>This Agreement, including the Consent and Media Release documents, constitutes the entire understanding between the Client and MPhotography with respect to the subject matter hereof and supersedes all prior agreements, representations, or understandings, whether written or oral.</p>
+    </div>
+
+    <div class="doc-section fade-up">
+      <h2>6. Deposit and Refund Policy</h2>
+      <p>In consideration of the travel and operational expenditures incurred by MPhotography for Services rendered beyond the Distance Threshold from the Designated Location, a Deposit shall be levied according to the following parameters:</p>
+      <ul>
+        <li>The initial 30 kilometers radius from the location defined by [Leslie &amp; Elgin Mills East (defined by the coordinates <strong>(43.898552457697996, -79.39582126954045)</strong>)] shall be exempt from any Deposit charges.</li>
+        <li>For all distances exceeding the Distance Threshold, a base Deposit fee of <strong>CAD $10</strong> shall be applied.</li>
+        <li>In addition to the base fee, a Distance-Based Fee of <strong>CAD $1</strong> per every incremental two (2) kilometers rounded up to nearest integer beyond the initial 30 kilometers shall be charged.</li>
+        <li>The Deposit shall be collected in advance of the Services and shall be <strong>fully refundable</strong> to the Client following the successful completion of the event or Services, subject to any deductions only for extraordinary expenses reasonably incurred.</li>
+      </ul>
+      <p>The Client acknowledges and agrees that the Deposit is a prerequisite to booking confirmation and that failure to remit the Deposit may result in cancellation or rescheduling of the Services.</p>
+    </div>
+
+  </div>
+</body>
 </html>
-
-
-

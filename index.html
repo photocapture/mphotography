@@ -2,226 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Main Page - MPhotography</title>
-  <style>
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 40px 20px;
-    }
-
-    h1 {
-      text-align: center;
-      font-size: 3em;
-      margin-bottom: 10px;
-      color: #2c3e50;
-    }
-
-    h2 {
-      text-align: center;
-      color: #34495e;
-      margin-top: 40px;
-    }
-
-    p {
-      text-align: center;
-      max-width: 700px;
-      margin: 10px auto 30px;
-      font-size: 1.05em;
-      line-height: 1.6;
-    }
-
-    .team, .gear, .lenses {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 30px;
-      margin-top: 20px;
-    }
-
-    .team-member, .gear-item, .lens-item {
-      background: white;
-      border-radius: 15px;
-      padding: 20px;
-      width: 250px;
-      text-align: center;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      transition: transform 0.2s ease;
-    }
-
-    .team-member:hover, .gear-item:hover, .lens-item:hover {
-      transform: translateY(-5px);
-    }
-
-    .team-member img, .gear-item img, .lens-item img {
-      width: 100px;
-      height: 100px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 3px solid #ddd;
-      margin-bottom: 15px;
-    }
-
-    .team-member h3, .gear-item h3, .lens-item h3 {
-      margin: 10px 0 5px;
-      font-size: 1.2em;
-      color: #2c3e50;
-    }
-
-    .team-member p, .gear-item p, .lens-item p {
-      font-size: 0.95em;
-      color: #555;
-      margin: 0;
-    }
-
-    ul {
-      max-width: 600px;
-      margin: 0 auto 30px;
-      padding-left: 20px;
-      font-size: 1em;
-      line-height: 1.6;
-      color: #555;
-      text-align: left;
-    }
-    button {
-      background-color: #2c3e50;
-      color: white;
-      border: none;
-      padding: 12px 24px;
-      font-size: 1em;
-      border-radius: 25px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-
-    button:hover {
-      background-color: #34495e;
-    }
-
-    .center-button {
-      text-align: center;
-      margin-top: 30px;
-    }
-  
-    .logo {
-      text-align: center;
-    }
-    .nav p, h1 {
-      color: #ff0000;
-    }
-
-    .logo img {
-      width: 400px;
-      height: 200px;
-      object-fit: contain; /* Use contain to preserve transparent edges */
-      margin-bottom: 15px;
-
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-
-      background-color: transparent; /* Important for PNG */
-    }
-
-    .navbar {
-      background-color: #2c3e50;
-      color: white;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 12px 20px;
-      position: sticky;
-      top: 0;
-      z-index: 999;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-    }
-
-    .nav-logo {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .nav-logo img {
-      width: 40px;
-      height: 40px;
-      object-fit: contain;
-      background-color: transparent;
-    }
-
-    .nav-logo span {
-      font-size: 1.2em;
-      font-weight: bold;
-      font-family: 'primary', sans-serif;
-      color: white;
-    }
-
-    .nav-links {
-      list-style: none;
-      display: flex;
-      gap: 25px;
-      margin: 0;
-      padding: 0;
-    }
-
-    .nav-links li a {
-      text-decoration: none;
-      color: white;
-      font-weight: 500;
-      font-size: 1em;
-      transition: color 0.3s ease;
-    }
-
-    .nav-links li a:hover {
-      color: #f1c40f;
-    }
-
-    @media (max-width: 768px) {
-      .nav-links {
-        flex-direction: column;
-        background-color: #2c3e50;
-        position: absolute;
-        top: 60px;
-        right: 20px;
-        width: 150px;
-        display: none;
-      }
-
-      .navbar.expanded .nav-links {
-        display: flex;
-      }
-    }
-
-
-    @font-face {
-      font-family: 'primary';
-      src: url('assets/fonts/primary.ttf') format('trueType');
-      font-weight: normal;
-      font-style: normal;
-    }
-
-
-    @media (max-width: 600px) {
-      .team-member, .gear-item, .lens-item {
-        width: 90%;
-      }
-    }
-
-    body {
-      font-family: 'primary';
-      margin: 0;
-      padding: 0;
-      background-color: #f0f2f5;
-      color: #333;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MPhotography</title>
+  <link rel="stylesheet" href="assets/styles/main.css" />
 </head>
 <body>
+
   <nav class="navbar">
-    <div class="nav-logo">
+    <a class="nav-logo" href="index.html">
       <img src="assets/logo/br0.png" alt="Logo" />
       <span>MPhotography</span>
-    </div>
+    </a>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="contact.html">Contact</a></li>
@@ -229,171 +20,206 @@
       <li><a href="medrel.html">Media Release</a></li>
       <li><a href="gallery.html">Gallery</a></li>
     </ul>
+    <button class="menu-toggle" onclick="this.closest('.navbar').classList.toggle('expanded')">☰</button>
   </nav>
 
-  <div class="container">
-    <div class="logo">
-      <img src="assets/logo/br0.png" alt="Logo">
+  <!-- ── Hero ── -->
+  <section class="hero">
+    <div class="hero-inner">
+      <img src="assets/logo/br0.png" alt="MPhotography Logo" class="hero-logo fade-in" />
+      <h1 class="fade-up delay-1">MPhotography</h1>
+      <p class="hero-sub fade-up delay-2">Photography &amp; Videography · Greater Toronto Area</p>
+      <div class="fade-up delay-3">
+        <span class="notice-banner">This webpage is not live — Services begin September 2025</span>
+      </div>
+      <div class="hero-divider fade-up delay-4"><span>✦</span></div>
     </div>
-    <div class="nav"><h1>THIS WEBPAGE IS NOT LIVE AND SERVICES WILL BEGIN SEPTEMBER 2025</h1></div>
-    <h2>About Us</h2>
-    <p>
-      We are a team who takes photography and videography to a different level. We are committed to excellence and high-quality photos in every way. We can capture the whole scene and edit it to fit one's (or a group's) personal needs. Established in 2025, we can work together to capture every moment along the way. We work with DSLRs and drones. We are based in the <b>Greater Toronto Area</b> in Ontario, Canada.
+  </section>
+
+  <div class="container">
+
+    <!-- ── About ── -->
+    <div class="section-title fade-up">
+      <h2>About Us</h2>
+    </div>
+    <p style="text-align:center; max-width:680px; margin:0 auto 16px;" class="fade-up delay-1">
+      We are a team who takes photography and videography to a different level. We are committed to excellence and high-quality photos in every way. We can capture the whole scene and edit it to fit one's (or a group's) personal needs. Established in 2025, we can work together to capture every moment along the way. We work with DSLRs and drones. We are based in the <strong>Greater Toronto Area</strong> in Ontario, Canada.
     </p>
 
-    <h2>Mission Statement</h2>
-    <p>
+    <!-- ── Mission ── -->
+    <div class="section-title fade-up">
+      <h2>Mission Statement</h2>
+    </div>
+    <p style="text-align:center; max-width:680px; margin:0 auto 16px;" class="fade-up delay-1">
       At MPhotography, our mission is to deliver unforgettable visual experiences by capturing moments with precision, creativity, and emotion. We strive to tell compelling stories through photography and videography, combining professional-grade gear, skilled editing, and artistic vision to elevate every project we touch.
     </p>
 
-
-    <h2>Meet Our Team</h2>
-    <div class="team">
-      <div class="team-member">
-        <img src="assets/meetourteam/a.jpeg" alt="Photo of Person A" />
+    <!-- ── Team ── -->
+    <div class="section-title fade-up">
+      <h2>Meet Our Team</h2>
+    </div>
+    <div class="card-grid">
+      <div class="card team-card">
+        <img src="assets/meetourteam/a.jpeg" alt="Photo of Jett Mu" />
         <h3>Jett Mu</h3>
         <ul>
-          <li>Primary Photographer & Videographer</li>
+          <li>Primary Photographer &amp; Videographer</li>
           <li>100 Hours of Drone Flight Time</li>
           <li>Canadian Basic Drone Pilot</li>
           <li>3000+ Total Photos Taken</li>
           <li>Web Developer</li>
         </ul>
       </div>
-      <div class="team-member">
-        <img src="assets/meetourteam/b.jpeg" alt="Photo of Person B" />
+      <div class="card team-card">
+        <img src="assets/meetourteam/b.jpeg" alt="Photo of Auston Mu" />
         <h3>Auston Mu</h3>
         <ul>
           <li>Primary Photo Editor</li>
-          <li>>100 Combined Hours of Illustator, Lightroom, and Photoshop</li>
+          <li>&gt;100 Combined Hours of Illustrator, Lightroom, and Photoshop</li>
           <li>Expert Designer</li>
         </ul>
       </div>
     </div>
 
-    <h2>Our Gear</h2>
-    <div class="gear">
-      <div class="gear-item">
-        <img src="assets/gear/a.webp" alt="Gear A" />
+    <!-- ── Gear ── -->
+    <div class="section-title fade-up">
+      <h2>Our Gear</h2>
+    </div>
+    <div class="card-grid">
+      <div class="card gear-card">
+        <img src="assets/gear/a.webp" alt="Canon EOS R8" />
         <h3>Canon EOS R8</h3>
       </div>
-      <div class="gear-item">
-        <img src="assets/gear/b.jpeg" alt="Gear B" />
+      <div class="card gear-card">
+        <img src="assets/gear/b.jpeg" alt="Canon EOS 5DS R" />
         <h3>Canon EOS 5DS R</h3>
       </div>
-      <div class="gear-item">
-        <img src="assets/gear/c.jpeg" alt="Gear C" />
+      <div class="card gear-card">
+        <img src="assets/gear/c.jpeg" alt="Canon EOS XTi Rebel" />
         <h3>Canon EOS XTi Rebel</h3>
       </div>
-      <div class="gear-item">
-        <img src="assets/gear/d.jpeg" alt="Gear D" />
+      <div class="card gear-card">
+        <img src="assets/gear/d.jpeg" alt="DJI Mini 2" />
         <h3>DJI Mini 2</h3>
       </div>
-      <div class="gear-item">
-        <img src="assets/gear/e.png" alt="Gear E" />
+      <div class="card gear-card">
+        <img src="assets/gear/e.png" alt="DJI Mavic Air" />
         <h3>DJI Mavic Air</h3>
         <p><strong>Registration</strong> C-2519873850</p>
       </div>
-      <div class="gear-item">
-        <img src="assets/gear/i.webp" alt="Gear F" />
+      <div class="card gear-card">
+        <img src="assets/gear/i.webp" alt="DJI Mic Mini" />
         <h3>DJI Mic Mini</h3>
       </div>
-      <div class="gear-item">
-        <img src="assets/gear/f.jpeg" alt="Gear G" />
+      <div class="card gear-card">
+        <img src="assets/gear/f.jpeg" alt="Generic Tripod" />
         <h3>Generic Tripod</h3>
       </div>
-      <div class="gear-item">
-        <img src="assets/gear/g.jpg" alt="Gear H" />
+      <div class="card gear-card">
+        <img src="assets/gear/g.jpg" alt="Green/Blue Screen" />
         <h3>Green/Blue Screen</h3>
       </div>
-        <div class="gear-item">
-        <img src="assets/gear/h.jpeg" alt="Gear I" />
+      <div class="card gear-card">
+        <img src="assets/gear/h.jpeg" alt="Floodlight" />
         <h3>Floodlight</h3>
       </div>
     </div>
 
-    <h2>Our Lenses</h2>
-    <div class="lenses">
-      <div class="lens-item">
-        <img src="assets/lenses/a.webp" alt="Lens A" />
+    <!-- ── Lenses ── -->
+    <div class="section-title fade-up">
+      <h2>Our Lenses</h2>
+    </div>
+    <div class="card-grid">
+      <div class="card gear-card">
+        <img src="assets/lenses/a.webp" alt="Canon EF-S 18-55mm" />
         <h3>Canon EF-S 18-55mm</h3>
-        <p>f/3.5-f/5.6</p>
-        <p>No Image Stabalization</p>
+        <p>f/3.5–f/5.6</p>
+        <p>No Image Stabilization</p>
       </div>
-      <div class="lens-item">
-        <img src="assets/lenses/b.webp" alt="Lens B" />
+      <div class="card gear-card">
+        <img src="assets/lenses/b.webp" alt="Canon EF-S 55-250mm" />
         <h3>Canon EF-S 55-250mm</h3>
-        <p>f/4-f/5.6</p>
-        <p>With Image Stabalization</p>
+        <p>f/4–f/5.6</p>
+        <p>With Image Stabilization</p>
       </div>
-      <div class="lens-item">
-        <img src="assets/lenses/c.webp" alt="Lens C" />
+      <div class="card gear-card">
+        <img src="assets/lenses/c.webp" alt="Canon RF 50mm" />
         <h3>Canon RF 50mm</h3>
         <p>f/1.8</p>
         <p>STM</p>
       </div>
-      <div class="lens-item">
-        <img src="assets/lenses/d.webp" alt="Lens D" />
+      <div class="card gear-card">
+        <img src="assets/lenses/d.webp" alt="Canon RF 24-105mm" />
         <h3>Canon RF 24-105mm</h3>
-        <p>f/4-f/7.1</p>
+        <p>f/4–f/7.1</p>
         <p>IS STM</p>
       </div>
-      <div class="lens-item">
-        <img src="assets/lenses/e.webp" alt="Lens E" />
+      <div class="card gear-card">
+        <img src="assets/lenses/e.webp" alt="Canon EF 24-70mm" />
         <h3>Canon EF 24-70mm</h3>
-        <p><b>II USM</b></p>
+        <p><strong>II USM</strong></p>
         <p>f/2.8</p>
       </div>
-      <div class="lens-item">
-        <img src="assets/lenses/f.webp" alt="Lens F" />
+      <div class="card gear-card">
+        <img src="assets/lenses/f.webp" alt="Canon EF 70-200mm" />
         <h3>Canon EF 70-200mm</h3>
-        <div class="nav"><p>NO LONGER AVALIABLE</p></div>
-        <p><b>IS II USM</b></p>
+        <span class="unavailable">No Longer Available</span>
+        <p><strong>IS II USM</strong></p>
         <p>f/2.8</p>
       </div>
     </div>
-    <h2>Software & Editing Programs</h2>
-    <div class="gear">
-      <div class="gear-item">
+
+    <!-- ── Software ── -->
+    <div class="section-title fade-up">
+      <h2>Software &amp; Editing Programs</h2>
+    </div>
+    <div class="card-grid">
+      <div class="card gear-card">
         <img src="assets/software/lightroom.png" alt="Lightroom" />
         <h3>Adobe Lightroom</h3>
         <p>Color correction, exposure, and light edits.</p>
       </div>
-      <div class="gear-item">
+      <div class="card gear-card">
         <img src="assets/software/photoshop.png" alt="Photoshop" />
         <h3>Adobe Photoshop</h3>
         <p>Advanced photo manipulation and effects.</p>
       </div>
-      <div class="gear-item">
+      <div class="card gear-card">
         <img src="assets/software/illustrator.png" alt="Illustrator" />
         <h3>Adobe Illustrator</h3>
         <p>Graphic and logo design for branding projects.</p>
       </div>
-      <div class="gear-item">
+      <div class="card gear-card">
         <img src="assets/software/prempro.png" alt="Premiere Pro" />
         <h3>Premiere Pro</h3>
         <p>Professional video editing and color grading.</p>
       </div>
-      <div class="gear-item">
+      <div class="card gear-card">
         <img src="assets/software/finalcutpro.jpeg" alt="Final Cut Pro" />
         <h3>Final Cut Pro</h3>
         <p>Video editing for maximum bitrate.</p>
       </div>
-      <div class="gear-item">
+      <div class="card gear-card">
         <img src="assets/software/motion.png" alt="Motion" />
         <h3>Motion</h3>
         <p>Special Effects for Final Cut Pro.</p>
       </div>
     </div>
 
-    <h2>Pricing</h2>
-    <p>Because we are just starting off we are <b>100% FREE</b>! If you are more than 30km away from the intersection ELGIN MILLS-LESLIE then we <i>may</i> demand a deposit which will be returned after the event.</p>
+    <!-- ── Pricing ── -->
+    <div class="section-title fade-up">
+      <h2>Pricing</h2>
+    </div>
+    <div class="pricing-callout fade-up delay-1">
+      <p>Because we are just starting off we are <strong>100% FREE</strong>! If you are more than 30km away from the intersection ELGIN MILLS-LESLIE then we <em>may</em> demand a deposit which will be returned after the event.</p>
+    </div>
 
-    <h2>Contact and Booking</h2>
-    <div class="center-button">
-      <a href="contact.html">
-        <button>Book a Session</button>
-      </a>
+    <!-- ── Booking ── -->
+    <div class="section-title fade-up">
+      <h2>Contact &amp; Booking</h2>
+    </div>
+    <div class="center-button fade-up delay-1" style="margin-bottom: 0;">
+      <a href="contact.html"><button>Book a Session</button></a>
     </div>
 
   </div>
